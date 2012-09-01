@@ -11,6 +11,11 @@ class CustomUrlManager extends CUrlManager {
      */
     protected function processRules() {
 	
+		// Make sure db settings are set
+		if(!Yii::app()->db) {
+			die(sprintf("Could not connect to the database. Please set the DB settings in the protected/config/%s file.", YII_DEBUG ? 'dev.php' : 'production.php'));
+		}
+		
 		$active_lang = implode('|', array_keys( Yii::app()->params['languages'] ));
 		$domain = Yii::app()->params['current_domain'];
 		

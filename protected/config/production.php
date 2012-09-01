@@ -10,9 +10,9 @@ $production = array(
 	'components' => array(
 		'db' =>  array(
                         'class' => 'CDbConnection',
-                        'connectionString' => 'mysql:host=localhost;dbname=yiiframework',
+                        'connectionString' => 'mysql:host=localhost;dbname=yiicms',
                         'username' => 'root',
-                        'password' => '89538953',
+                        'password' => '',
                         'charset' => 'UTF8',
                         'tablePrefix' => '',
                         'emulatePrepare' => true,
@@ -31,8 +31,8 @@ $production = array(
 				array(
 					'class' => 'LogEmailMessages',
 					'levels' => 'error, warning',
-					'emails' => 'vadimg88@gmail.com',
-					'sentFrom' => 'support@yiiframework.co.il',
+					'emails' => 'admin@admin.com',
+					'sentFrom' => 'admin@admin.com',
 					'subject' => 'Application Error',
 				),
 		),

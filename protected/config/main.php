@@ -54,12 +54,12 @@ return array(
                             'application.extensions.*',
         ),
         'theme' => 'default',
-        'name' => 'YiiFramework.co.il',
+        'name' => 'Yii CMS',
         'defaultController' => 'site/index',
         'layout' => 'main',
         'charset'=>'UTF-8',
         'sourceLanguage' => 'en',
-        'language' => 'he',
+        'language' => 'en',
         'params' => array( 
 							'fastcache' => $fastCache, 
 							'languages' => array( 'en' => 'English', 'he' => 'Hebrew' ),
@@ -67,11 +67,11 @@ return array(
 							'loggedInDays' => 10,
 							'current_domain' => $current_domain,
 							'default_group' => 'user',
-							'facebookappid' => '128360757178028',
-							'facebookapikey' => '74e1bebd03d8151aa3a8a8cefe110354',
-							'facebookapisecret' => '96133927a097bc424396f29612108ac9',
-							'emailin' => 'support@yiiframework.co.il',
-							'emailout' => 'support@yiiframework.co.il',
+							'facebookappid' => 'XXXXX',
+							'facebookapikey' => 'XXXXX',
+							'facebookapisecret' => 'XXXXX',
+							'emailin' => 'admin@admin.com',
+							'emailout' => 'admin@admin.com',
 							 ),
         'aliases' => array(
                 'helpers' => 'application.widgets',
@@ -108,7 +108,6 @@ return array(
 						'class' => 'CustomWebUser',
 						'allowAutoLogin' => true,
 						'autoRenewCookie' => true,
-	                    'identityCookie' => array('domain' => '.' . $current_domain),
 				),
                 'messages' => array(
                         'class' => 'CDbMessageSource',
@@ -127,13 +126,11 @@ return array(
                         'enableCookieValidation' => true,
                         'enableCsrfValidation' => !isset($_POST['dontvalidate']) ? true : false,
                         'csrfTokenName' => 'SECTOKEN',
-						'csrfCookie' => array( 'domain' => '.' . $current_domain )
                 ),
                 'session' =>  array(
 					'class' => 'CDbHttpSession',
 					'sessionTableName' => 'sessions',
 					'connectionID' => 'db',
-                    'cookieParams' => array('domain' => '.' . $current_domain ),
                     'timeout' => 3600,
                     'sessionName' => 'SECSESS',
 

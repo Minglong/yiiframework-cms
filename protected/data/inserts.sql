@@ -1227,7 +1227,7 @@ INSERT INTO `SourceMessage` VALUES(997, 'login', 'Thank You. You are now logged 
 -- Dumping data for table `members`
 --
 
-INSERT INTO `members` (`username`, `email`, `password`, `joined`, `role`) VALUES ('admin', 'admin@admin.com', 'a95d69667de20f113fb11e1d6605ab1367c8eabd', 1272716496, 'admin');
+INSERT INTO `members` (`username`, `email`, `password`, `joined`, `role`) VALUES ('admin', 'admin@admin.com', '1b59f198918e701060615d9433028f620efadbad', 1272716496, 'admin');
 
 --
 -- Dumping data for table `settings`

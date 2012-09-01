@@ -17,8 +17,7 @@ class MasterModule extends CWebModule {
 	
 		// If the langauge is set then set the application
 		// Language appropriatly
-		if( ( isset($_GET['lang']) && in_array( $_GET['lang'], array_keys(Yii::app()->params['languages']) ) ) )
-		{
+		if( ( isset($_GET['lang']) && in_array( $_GET['lang'], array_keys(Yii::app()->params['languages']) ) ) ) {
 			Yii::app()->setLanguage( $_GET['lang'] );
 		}
 		
