@@ -12,12 +12,11 @@ Installation steps
   - emailin
   - emailout
 - Make sure you change the DB values in both protected/config/dev.php and protected/config/production.php
-- Edit index.php file and change the 'CURRENT_ACTIVE_DOMAIN' constant to the domain you will be using, This is required for the url routes to work.
 
 - Access the application and you should see the index page of the site module. 
-- In order to access the application admin control panel, Navigate to the /admin module IE: http://site.com/admin
-  and use the following username and password to access the admin panel and have the admin role permissions:
-  - User: admin
+- In order to access the application admin control panel, You must first login in the front end site so navigate to the login page
+  and use the following email address and password to access the admin panel and have the admin role permissions:
+  - Email: admin@admin.com
   - Password: admin
 
 
