@@ -140,7 +140,7 @@
 			
 			$this->widget('zii.widgets.CBreadcrumbs', array(
 				'id' => 'breadcrumbs',
-				'homeLink' => CHtml::link(Yii::t('adminglobal', 'Home'), '/admin'),
+				'homeLink' => CHtml::link(Yii::t('adminglobal', 'Home'), array('index/index')),
 			    'links'=>$this->breadcrumbs
 			));
 			
